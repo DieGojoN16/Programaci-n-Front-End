@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+    <!-- style es la etiqueta para añadir estilos dentro de la página
+    <style>
+        /* podemso añadir estilos a toda la etiqueta */
+        li{
+            list-style-type: none;
+        }
+        /* # sirve para añadir estilos según el id de la etiqueta */
+        #texto1{
+            color: white;
+        }
+        /* . sirve para añadir estilos al atributo class sirve  */
+        .texto-100{
+            font-size: 100px;
+        }
+    </style> -->
+    <!-- link permite cargar los estilos css -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<!-- es el atrinbuto para dar estilos en la etiqueta -->
+
+<body style="background-color: coral;">
+    <!-- nav es el contenedor para el menú -->
+    <nav>
+        <!-- ul es una lista ordenada de elementos -->
+        <ul>
+            <!-- li es el elemento de la lista -->
+            <li><a href="">Inicio</a></li>
+            <!-- a es la etiqueta para redireccionar -->
+            <li><a href="https://portal.inacap.cl/">Inacap</a></li>
+            <!-- target sirve para definir redireccionamiento -->
+            <li><a href="https://www.google.cl/" target="_blank">Google</a></li>
+            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+            <li><a href="https://chatgpt.com/">chatgpt</a></li>
+        </ul>
+    </nav>
+    <!-- header es el contenedor para el inició de la página -->
+    <header class="hero">
+        <div class="text-hero">
+            <!-- h1 al h6 son titulos y subtitulos -->
+            <h1 class="text-80">Mi primera WEB</h1>
+            <h3 class="text-35">La mejor web del mundo mundial :D</h3>
+        </div>
+    </header>
+    <!-- main es el contenedor para el contenido principal de la página -->
+    <main>
+        <h2>Contenido Principal</h2>
+        <!-- etiqueta p para parrafos o texto -->
+        <p> Texto de prueba en mi primera web</p>
+        <!-- div es un contenedor que se puede utilizar en cualquier contexto -->
+        <h3>Galería</h3>
+        <div>
+            <!-- img es la etiqueta para insertar imagenes, src es la ruta de la imagen,
+             alt es un texto en caso de que la ruta se rompa, width es el ancho de imagen,
+             height es el alto de imagen y estos pueden ser en pixeles o porcentajes -->
+            <div class="gallery">
+                <img src="foto1.avif" alt="falta imagen" width="300" height="180">
+                <div class="desc">
+                    Robot pensantes
+                </div>
+            </div>
+            <img width="17%"
+                src="https://www.eluniverso.com/resizer/KSccsOJTXrIVceZ5jLkv-OtiX6Y=/arc-anglerfish-arc2-prod-eluniverso/public/RONFABO6IZALLPSTJ5QPTX4FAA.jpg"
+                alt="">
+        </div>
+        <h3>Videos</h3>
+        <div>
+            <!-- video es la etiqueta para insertar videos, src es la ruta del video, 
+             controls son los controladores del reproductor(muted, volumen, start, stop),
+             autoplay para reproducir al cargar la página y muted el video parte si sonido -->
+            <video src="video1.mp4" width="30%" autoplay controls muted></video>
+            <!-- iframe es la etiqueta que sirve para añadir contenido de otras páginas 
+             a mi sitio web -->
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/5E2HpDXAaOs"
+                title="Admisión INACAP 2025" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        <h3>Tabla</h3>
+        <!-- table es la etiqueta para las tablas -->
+        <table border="1">
+            <!-- thead es el encabezado de la tabla -->
+            <thead>
+                <!-- tr una fila de la tabla  -->
+                <tr>
+                    <!-- th son las celdas del encabezado -->
+                    <th>N°</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <!-- tbody es el cuerpo de la tabla -->
+            <tbody>
+                <!--  tr es la fila -->
+                <tr>
+                    <!-- td son las celdas del cuerpo -->
+                    <td>1</td>
+                    <td>Juan</td>
+                    <td>juan@gmail.cl</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María</td>
+                    <td>maria@gmail.cl</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <!-- footer el contenedor para el pie de página -->
+    <footer></footer>
+</body>
+
+</html>

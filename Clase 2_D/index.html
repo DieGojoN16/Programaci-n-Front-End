@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Live serve y vscode-icons (Extensiones)-->
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+    <!--style es la etiqueta para añadir estilos dentro de la página-->
+    <style>
+        /*podemos agregar estilo a toda la etiqueta*/
+        li{
+            list-style-type: none;
+        }
+        /*sirve para añadir estilos según el id de la etiqueta*/
+        #texto1{
+            color: white;
+        }
+        /*. sirveclass sirve*/
+        .texto-100{
+            font-size: 100px;
+        }
+    </style>
+    <!--link permite cargar los estilos css-->
+    <link rel = "stylesheet" href="estilo.css">
+</head>
+<!--style es el atributo para dar estilos en la etiqueta-->
+<body style ="background-color: rgba(189, 11, 11, 0.85);"> 
+    <!-- nav: Es el contenedor para el menú-->
+    <nav>
+        <!-- ul: Es una lista ordenada de elementos-->
+        <ul>
+            <!-- li: Es el elemento de la lista-->
+            <li>Inicio</li>
+            <!--a: es la etiqueta para redireccionar-->
+            <li><a href="https://portal.inacap.cl/">Inacap</a></li>
+            <!--target: sirve para abrir una nueva pestaña-->
+            <li><a href="https://www.google.cl/?hl=es" target="_blank">Google</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+            <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></li>
+        </ul>
+    </nav>
+    <!-- header: Es el contenedor para el inicio de la página-->
+    <header class="hero">
+        <div class="text-hero">
+        <!--h1 al h6: son titulos y subtitulos-->
+        <h1 class="text-80"> Mi primera página WEB</h1>
+        <h3 class="text-35">La mejor pagina del mundo mundial XD</h3>
+        <!--hr es una linea-->
+        </div>
+    </header>
+    <!-- main: Es el contenedor para el contenido principal de la página-->
+    <main>
+        <h2>Contenido Principal</h2>
+        <!--p: para parrafos o texto-->
+        <p>Texto de prueba en mi primera web</p>
+        <!--div: contenedor que se puede utilizar en cualquier contexto-->
+        <div>
+            <!--img: es la etiqueta para insertar imagenes, src es la ruta de la imagen,
+            alt es un texto en caso de que la ruta se rompa, width es el ancho de la imagen
+            height es el alto de imagen y estos pueden ser en pixeles o en porcentajes-->
+            <div class="gallery">
+            <img src="imagen1.svg.png" alt="Falta imagen perkin" width="300" height="180">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/cowboy-bebop-cancelacion-serie-1637320101.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="Falta imagen perkin" width="17%">
+        </div>
+        </div>
+        <h3>Videos</h3>
+        <div>
+            <!--video: es la etiqueta para insertar videos, src es la ruta del video,
+            controls son los controladores del reproductor (muted, volumen, start, stop),
+            autoplay para reproducir al cargar la pagina y muted el video parte sin audio-->
+            <video src="stickerGojo.mp4" width="50%" autoplay muted controls></video>
+            <!--iframe: para agregar contenido de otras paginas web-->
+            <iframe width="525" height="391" src="https://www.youtube.com/embed/qtSwxrhsvvI" title="Comercial Santo Tomás" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <!-- footer: Es el contenedor para el pie de página-->
+    <footer></footer>
+
+</body>
+</html>
